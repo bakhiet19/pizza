@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="fas fa-angle-up" onclick="tops()"></div>
+
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">Pizza.</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#order">order</a>
+                <a href="#fag">fag</a>
+            </nav>
+            
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+        </section>
+    </header>
+
+
+    <div class="user-account">
+
+
+        <section>
+            <div id="close-account">
+                <span id="close">close</span>
+            </div>
+    
+    
+    
+            <div class="user">
+                <p><span>you are not login now</span></p>
+            </div>
+    
+            <div class="display-orders">
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+            </div>
+    
+    
+            <div class="flex">
+                <form action="" method="post">
+                    <h3>login now</h3>
+                    <input type="email" name="email" required class="box" placeholder="Enter your email">
+                    <input type="password" name="password" required class="box" placeholder="Enter your password">
+                    <input type="submit" name="login" value="login now" class="btn">
+                </form>
+    
+    
+                <form action="" method="post">
+                    <h3>register now</h3>
+                    <input type="text" name="name" required class="box" placeholder="Enter your name">
+                    <input type="email" name="email" required class="box" placeholder="Enter your email">
+                    <input type="password" name="password" required class="box" placeholder="Enter your password">
+                    <input type="password" name="cpassword" required class="box" placeholder="confirm your password">
+                    <input type="submit" name="register" value="register now" class="btn">
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="my-orders">
+        <div id="close-orders">
+            <span id="close_order">close</span>
+        </div>
+        <h3 class="title">my orders</h3>
+
+        <div class="box">
+            <p>placed on <span>06/04/2022</span> </p>
+            <p>name <span>bakhit mohamad</span> </p>
+            <p>number <span>0994723426</span> </p>
+            <p>payement status <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+            <p>placed on <span>06/04/2022</span> </p>
+            <p>name <span>bakhit mohamad</span> </p>
+            <p>number <span>0994723426</span> </p>
+            <p>payement status <span style="color: var(--red);">pending</span> </p>
+        </div>
+
+        <div class="box">
+            <p>placed on <span>06/04/2022</span> </p>
+            <p>name <span>bakhit mohamad</span> </p>
+            <p>number <span>0994723426</span> </p>
+            <p>payement status <span style="color: var(--red);">pending</span> </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="shopping-cart">
+       <section>
+        <div id="close-cart">
+            <span id="cart">close</span>
+        </div>
+
+        <div class="box">
+            <a href="" class="fas fa-times"></a>
+            <img src="images/1.jpg" alt="">
+            <div class="content">
+                <p>pizza-1 <span>($3 / -2x)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" min="1" value="1" max="100">
+                    <button class="fas fa-edit" type="submit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <a href="" class="fas fa-times"></a>
+            <img src="images/2.jpg" alt="">
+            <div class="content">
+                <p>pizza-1 <span>($3 / -2x)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" min="1" value="1" max="100">
+                    <button class="fas fa-edit" type="submit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <a href="" class="fas fa-times"></a>
+            <img src="images/3.jfif" alt="">
+            <div class="content">
+                <p>pizza-1 <span>($3 / -2x)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" min="1" value="1" max="100">
+                    <button class="fas fa-edit" type="submit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <a href="#order" class="btn" style="text-align: center;" id="order">order now</a>
+
+       </section>
+    </div>
+
+
+
+
+    <div class="home-bg">
+        <section class="home">
+            <div class="slide-container">
+
+
+                <div class="slide active">
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <section class="about" id="about">
+        <h1 class="heading">about us</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/about-1.svg" alt="">
+                <h3>made with my love</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Ipsa aspernatur tempora fuga in quasi? Dicta!</p>
+                <a href="" id="#menu" class="btn">our menu</a>
+            </div>
+
+            <div class="box">
+                <img src="images/about-2.svg" alt="">
+                <h3>30 minutes dilevery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur Lorem ipsum dolor sit amet. tempora fuga in quasi? Dicta!</p>
+                <a href="" id="#menu" class="btn">our menu</a>
+            </div>
+
+
+            <div class="box">
+                <img src="images/about-3.svg" alt="">
+                <h3>share with friends</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Ipsa aspernatur tempora fuga in quasi? Dicta!</p>
+                <a href="" id="#menu" class="btn">our menu</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="menu" id="menu">
+        <div class="heading">
+            our menu
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="price">
+                    $ <span>6</span>
+                </div>
+                <img src="images/pizza-1.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+
+            <div class="box">
+                <div class="price">
+                    $ <span>1</span>
+                </div>
+                <img src="images/pizza-2.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+
+            <div class="box">
+                <div class="price">
+                    $ <span>5</span>
+                </div>
+                <img src="images/pizza-3.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+
+            <div class="box">
+                <div class="price">
+                    $ <span>3</span>
+                </div>
+                <img src="images/pizza-6.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+
+            <div class="box">
+                <div class="price">
+                    $ <span>4</span>
+                </div>
+                <img src="images/pizza-4.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+
+            <div class="box">
+                <div class="price">
+                    $ <span>4</span>
+                </div>
+                <img src="images/pizza-5.jpg" alt="">
+                <div class="name">pizza-1</div>
+                <form action="">
+                    <input type="number" name="" min="1" class="qty" name="qty" value="1" id="">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="skew" id="skew">
+        <h3>OUR BEST CHEF</h3>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+                <h3 class="name-chef">
+                    Bakit mohamad
+                </h3>
+                <h4 class="cont">
+                    food chef
+                </h4>
+                <div class="icons">
+                    <i class="fas fa-facebook"></i>
+                    <i class="fas fa-telegram"></i>
+                    <i class="fas fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/2.png" alt="">
+                <h3 class="name-chef">
+                    Bakit mohamad
+                </h3>
+                <h4 class="cont">
+                    food chef
+                </h4>
+                <div class="icons">
+                    <i class="fas fa-facebook"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/3.webp" alt="">
+                <h3 class="name-chef">
+                    Bakit mohamad
+                </h3>
+                <h4 class="cont">
+                    food chef
+                </h4>
+                <div class="icons">
+                    <i class="fas fa-facebook"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/4.webp" alt="">
+                <h3 class="name-chef">
+                    Bakit mohamad
+                </h3>
+                <h4 class="cont">
+                    food chef
+                </h4>
+                <div class="icons">
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="gallery" id="gallery">
+
+        <h3>gallery</h3>
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <img src="images/14.jpg" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <img src="images/15.webp" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <img src="images/16.webp" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <img src="images/13.webp" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <img src="images/11.jfif" alt="">
+            </div>
+
+
+
+            <div class="box">
+                <img src="images/12.avif" alt="">
+            </div>
+
+
+
+            
+        </div>
+
+
+    </section>
+
+
+
+    <section class="order" id="order">
+        <h1 class="heading">
+            order now
+        </h1>
+        <form action="" method="post">
+            <div class="display-orders">
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+                <p>pizza-1 <span>($3/- x 2)</span> </p>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your name</span>
+                    <input type="text" name="" class="box" id="" required placeholder="enter your name">
+                </div>
+
+                <div class="inputBox">
+                    <span>your number</span>
+                    <input type="number" name="" class="box" id="" required placeholder="enter your number">
+                </div>
+
+                <div class="inputBox">
+                    <span>payement method</span>
+                    <select name="method" class="box" id="">
+                        <option value="cash on dilevery">cash on dilevery</option>
+                        <option value="cash on credit card">cash on credit card</option>
+                        <option value="cash on paytm">cash on paytm</option>
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <span>your Adress</span>
+                    <input type="number" name="flat" class="box" id="" required placeholder="enter your Adress eg...">
+                </div>
+
+                <div class="inputBox">
+                    <span>your street</span>
+                    <input type="number" name="flat" class="box" id="" required placeholder="enter your street eg...">
+                </div>
+
+                <div class="inputBox">
+                    <span>your notes</span>
+                    <input type="text" name="flat" class="box" id="" required placeholder="enter your notes">
+                </div>
+
+            </div>
+
+            <input type="submit" value="order now" class="btn" name="order"> 
+
+        </form>
+    </section>
+
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+123-456-789</p>
+                <p>+123-456-789</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>opening hour</h3>
+                <p>+123-456-789</p>
+                <p>+123-456-789</p>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>phone number</h3>
+                <p>+123-456-789</p>
+                <p>+123-456-789</p>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-marker-alt"></i>
+                <h3>phone number</h3>
+                <p>+123-456-789</p>
+                <p>+123-456-789</p>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
